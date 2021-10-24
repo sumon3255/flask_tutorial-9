@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %} HomePage {% endblock %} 
+     
+{% block content %} 
+
+<div class="container my-3">
+  <h1>Welcome to text Analyzer</h1>
+ <br>
+ <form action="/textanalyzer">
+ <textarea name="text"  style="margin: 0px; width: 720px; height:150px;"></textarea>
+  <br>
+  <input type="checkbox" name="wordcount" id="">Total Word Count<br>
+  <br>
+  <input type="checkbox" name="removepunc" id="">Remove Pronaounch<br>
+  <br>
+
+  <button type="submit" class="btn btn-success">Analyze Text</button>
+ 
+</form>
+</div>
+
+{% endblock %}
